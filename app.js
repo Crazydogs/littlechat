@@ -7,6 +7,8 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
+  , Db = require('mongodb').Db
+  , Server = require('mongodb').Server
   , path = require('path');
 
 var app = express();

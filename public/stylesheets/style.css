@@ -1,8 +1,27 @@
+html,body{height:100%;margin:0;padding:0;}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: #555;
 }
+ul{list-style:none;margin:0;padding:0;}
 
-a {
-  color: #00B7FF;
-}
+.g_side{background-color:#fff;float:left;width:300px;height:100%;padding-top:30px;border-right:1px solid #ddd;overflow:hidden;}
+.g_main{}
+.g_center{width:400px;height:300px;position:fixed;top:50%;margin-top:-150px;left:50%;margin-left:-200px;}
+
+.m_userlist{padding-top:30px;}
+.m_userlist li{line-height:2.5;padding-left:25px;}
+.m_userlist li:hover{border-left:5px solid #0dd;padding-left:20px;}
+
+.m_dialogue{padding:30px;overflow:hidden;}
+.m_dialogue_l{text-align:left;}
+.m_dialogue_r{text-align:right;}
+.m_dialogue_l_picture{float:left;}
+.m_dialogue_r_picture{float:right;}
+.m_dialogue_c{max-width:60%;min-width:100px;background:#ddd;border-radius:20px;padding:10px;}
+.m_dialogue_l_content{float:left;}
+.m_dialogue_r_content{float:right;text-align:right;}
+
+.m_login td{line-height:1.66;height:30px;text-align:center;}
+
+.f_clear{clear:both;}
