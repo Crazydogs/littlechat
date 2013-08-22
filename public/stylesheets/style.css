@@ -23,5 +23,8 @@ ul{list-style:none;margin:0;padding:0;}
 .m_dialogue_r_content{float:right;text-align:right;}
 
 .m_login td{line-height:1.66;height:30px;text-align:center;}
+.m_reg td{line-height:1.66;height:30px;text-align:center;}
+
+.w_warn{color:#f55;background:#fdd;border:1px solid #f55;text-align:center;display:block;}
 
 .f_clear{clear:both;}

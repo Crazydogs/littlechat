@@ -7,10 +7,9 @@ var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
   , http = require('http')
-  , Db = require('mongodb').Db
-  , Server = require('mongodb').Server
   , path = require('path');
 
+var mongostore = require('connect-mongo')(express);
 var app = express();
 
 // all environments
@@ -20,6 +19,13 @@ app.set('view engine', 'ejs');
 app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
+app.use(express.cookieParser());
+app.use(express.session({
+	'secret': 'xiaomao',
+	'store': new mongostore({
+		db: 'littlechat'
+	})
+}));
 app.use(express.methodOverride());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
